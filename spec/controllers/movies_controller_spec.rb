@@ -37,7 +37,7 @@ describe MoviesController do
        expect(assigns(:movies)).to eq(@fake_results)
      end
      it 'calls Tmdb with valid API key' do
-       Movie.find_in_tmdb({title: "hacker", language: "en"})
+      Movie.find_in_tmdb({title: "hacker", language: "en"})
      end
    end
  end  
